@@ -1,0 +1,325 @@
+.qbCardShadow {
+  -webkit-box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.3), 5px 8px 25px 0 rgba(0, 0, 0, 0.28);
+          box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.3), 5px 8px 25px 0 rgba(0, 0, 0, 0.28);
+}
+
+.qb-event-container {
+  padding-top: 100px;
+}
+
+.qb-event-container .qb-back-btn {
+  position: fixed;
+  right: 5%;
+  top: 10%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #08b76d;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 550;
+  z-index: 10;
+}
+
+.qb-event-container .qb-event-wrap .qb-event-title {
+  color: #f6f6f6;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 550;
+  padding: 20px;
+}
+
+.qb-event-container .qb-event-wrap .qb-event-card-wrap {
+  text-align: center;
+}
+
+.qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card {
+  display: inline-block;
+  height: 350px;
+  width: 650px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 5px solid #e9e9e9;
+  background-color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card .qb-event-card-pic {
+  float: left;
+  height: 300px;
+  width: 300px;
+}
+
+.qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card .qb-event-card-details {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  border-top: 5px solid #e9e9e9;
+  border-right: 5px solid #e9e9e9;
+  border-bottom: 5px solid #e9e9e9;
+  background-color: #fbfbfb;
+}
+
+.qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card .qb-event-card-details .qb-event-card-des {
+  text-align: left;
+  height: 25%;
+  width: 100%;
+  padding: 18px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 25px;
+}
+
+.qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card .qb-event-card-details .qb-event-card-des span {
+  font-weight: 550;
+  color: black;
+}
+
+.qb-event-container .qb-event-wrap .qb-event-details {
+  text-align: center;
+  -webkit-transform: translateY(-170px);
+          transform: translateY(-170px);
+  background-color: #fff;
+  padding: 5% 10%;
+  font-size: 25px;
+}
+
+.qb-event-container .qb-event-wrap .qb-event-details .qb-psuedo {
+  height: 150px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 0;
+}
+
+.qb-event-container .qb-event-wrap .qb-event-details .qb-psuedo-details-card {
+  display: none;
+}
+
+.qb-event-container .qb-event-wrap .qb-event-details .qb-points {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.qb-event-container .qb-event-wrap .qb-event-details .qb-points .qb-point {
+  padding: 10px;
+  font-size: 25px;
+}
+
+.qb-event-container .qb-event-wrap .qb-event-details .qb-points .qb-point span {
+  font-weight: 550;
+}
+
+.qb-event-container .qb-event-wrap .qb-event-details .qb-points .qb-point a {
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .qb-event-container {
+    padding-top: 100px;
+  }
+  .qb-event-container .qb-back-btn {
+    position: fixed;
+    right: 5%;
+    top: 10%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #08b76d;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 550;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-title {
+    color: #f6f6f6;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    padding: 20px;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-card-wrap {
+    text-align: center;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card {
+    display: inline-block;
+    height: 250px;
+    width: 450px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 5px solid #e9e9e9;
+    background-color: #fff;
+    z-index: 2;
+    position: relative;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card .qb-event-card-pic {
+    float: left;
+    height: 200px;
+    width: 200px;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card .qb-event-card-details {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    float: left;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    border-top: 5px solid #e9e9e9;
+    border-right: 5px solid #e9e9e9;
+    border-bottom: 5px solid #e9e9e9;
+    background-color: #fbfbfb;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card .qb-event-card-details .qb-event-card-des {
+    text-align: left;
+    height: 25%;
+    width: 100%;
+    padding: 10px 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 17px;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card .qb-event-card-details .qb-event-card-des span {
+    font-weight: 550;
+    color: black;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-details {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+    background-color: #fff;
+    padding: 7.5% 10%;
+    font-size: 20px;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-details .qb-psuedo {
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 0;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-details .qb-psuedo-details-card {
+    display: none;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-details .qb-point {
+    font-size: 20px !important;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-details .qb-point span {
+    font-weight: 550;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-details .qb-point a {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .qb-event-container {
+    padding-top: 100px;
+  }
+  .qb-event-container .qb-back-btn {
+    position: fixed;
+    right: 5%;
+    top: 10%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #08b76d;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 550;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-title {
+    color: #f6f6f6;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    padding: 20px;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-card-wrap {
+    text-align: center;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card {
+    display: inline-block;
+    height: 230px;
+    width: 230px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 5px solid #e9e9e9;
+    background-color: #fff;
+    z-index: 2;
+    position: relative;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card .qb-event-card-pic {
+    float: left;
+    height: 200px;
+    width: 200px;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card .qb-event-card-details {
+    display: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    float: left;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    border-top: 5px solid #e9e9e9;
+    border-right: 5px solid #e9e9e9;
+    border-bottom: 5px solid #e9e9e9;
+    background-color: #fbfbfb;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card .qb-event-card-details .qb-event-card-des {
+    text-align: left;
+    height: 25%;
+    width: 100%;
+    padding: 10px 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 20px;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-card-wrap .qb-event-card .qb-event-card-details .qb-event-card-des span {
+    font-weight: 550;
+    color: black;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-details {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+    background-color: #fff;
+    padding: 7.5% 10%;
+    font-size: 20px;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-details .qb-psuedo {
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 0;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-details .qb-psuedo-details-card {
+    display: block;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-details .qb-psuedo-details-card .qb-event-card-des {
+    text-align: left;
+    height: 25%;
+    width: 100%;
+    padding: 10px 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 20px;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-details .qb-psuedo-details-card .qb-event-card-des span {
+    font-weight: 550;
+    color: black;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-details .qb-point {
+    font-size: 20px !important;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-details .qb-point span {
+    font-weight: 550;
+  }
+  .qb-event-container .qb-event-wrap .qb-event-details .qb-point a {
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=Event.css.map */

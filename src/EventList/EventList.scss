@@ -1,0 +1,94 @@
+.qbCardShadow{
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.3), 5px 8px 25px 0 rgba(0, 0, 0, 0.28); 
+}
+.qb-event-list-wrap{
+    background-color: #fff;
+    .qb-event-wrap{
+        //background-color: #903C81;
+    }
+    .qb-event-list{
+        padding: 2.5% 10%;
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+
+        .qb-event-list-head{
+            font-size: 40px;
+            font-weight: 550;
+            text-align: center;
+            color: #3d3d3d;
+            padding-top: 70px;
+        }
+
+        .qb-event-list-events{
+            display: inline-block;
+            width: 550px;
+
+            .qb-event-title-wrap{
+                padding: 20px;
+                text-align: center;
+                margin: 30px 0px;   
+                border-radius: 5px;
+                
+                .qb-event-link{
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: 550;
+                    color: #3d3d3d;
+
+                    .qb-event-title{
+                    
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 850px){
+    .qb-event-list-wrap{
+        background-color: #fff;
+        
+        .qb-event-wrap{
+            background-color: #903C81;
+        }
+        .qb-event-list{
+            padding: 4% 12.5%;
+            font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+    
+            .qb-event-list-head{
+                font-size: 30px;
+                font-weight: 550;
+                text-align: center;
+                color: #3d3d3d;
+                padding-top: 60px;
+            }
+    
+            .qb-event-list-events{
+                display: inline-block;
+                width: 100%;
+    
+                .qb-event-title-wrap{
+                    padding: 20px;
+                    text-align: center;
+                    margin: 30px 0px;   
+                    border-radius: 5px;
+                    
+                    .qb-event-link{
+                        text-decoration: none;
+                        font-size: 20px;
+                        font-weight: 550;
+                        color: #3d3d3d;
+    
+                        .qb-event-title{
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

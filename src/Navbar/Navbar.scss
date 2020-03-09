@@ -1,0 +1,95 @@
+.qbCardShadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.28); 
+}
+.qb-navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-image: linear-gradient(to right, #1F628C , #24275A);
+    //linear-gradient(to right, #3499D8, #3C4083)
+
+    .qb-navbar-content{
+        overflow: hidden;
+        padding-right: 5%;
+        padding-left: 7.5%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        .qb-navbar-logo{
+            float: left;
+            color: #ecebeb;
+            font-weight: 550;
+            font-size: 25px;
+        }
+        .qb-navbar-button{
+            float: right;
+            display: none;
+            color: #ecebeb;
+        }
+        .qb-navbar-links{
+            padding-top: 8.5px;
+            padding-bottom: 8.5px;
+            float: right;
+            overflow: hidden;
+            width: auto;
+            transition-duration: 0.35s;
+
+            .qb-navbar-nav{
+                text-align: center;
+                text-decoration: none;
+                padding: 0px 20px;
+                width: auto;
+                display: inline-block;
+                border: unset;
+                color: #e5e3e3;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .qb-navbar{
+        .qb-navbar-content{
+            overflow: hidden;
+            padding-right: 5%;
+            padding-left: 7.5%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+    
+            .qb-navbar-logo{
+                float: left;
+                font-size: 25px;
+            }
+            .qb-navbar-button{
+                font-size: 25px;
+                float: right;
+                display: block;
+            }
+            .qb-navbar-links{
+                padding-top: 3px;
+                padding-bottom: 0px;
+                overflow: hidden;
+                float: none;
+                width: 100%;
+    
+                .qb-navbar-nav{
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+
+            .qb-navbar-links-open{
+                height: 125.3px;
+            }
+
+            .qb-navbar-links-close{
+                height: 0px;
+                padding: 0px !important;
+            }
+        }
+    }
+}
