@@ -51,6 +51,19 @@
   font-weight: 550;
   color: #3d3d3d;
   display: inline-block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.qb-event-list-wrap .qb-event-list .qb-event-list-events .qb-event-title-wrap .qb-event-title .qb-event-link .qb-event-title-text {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @media (max-width: 850px) {
