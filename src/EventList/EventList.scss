@@ -17,7 +17,8 @@
             font-weight: 550;
             text-align: center;
             color: #3d3d3d;
-            padding-top: 70px;
+            padding-top: 90px;
+            padding-bottom: 20px;
         }
 
         .qb-event-list-events{
@@ -25,19 +26,30 @@
             width: 550px;
 
             .qb-event-title-wrap{
+                border: 2px solid #e5e5e5;
                 padding: 20px;
-                text-align: center;
-                margin: 30px 0px;   
-                border-radius: 5px;
-                
-                .qb-event-link{
-                    text-decoration: none;
-                    font-size: 20px;
-                    font-weight: 550;
-                    color: #3d3d3d;
+                border-radius: 15px;
 
-                    .qb-event-title{
+                .qb-event-title{
+                    position: relative;
+                    background-color: rgb(255, 253, 253);
+                    padding: 20px;
+                    opacity: 1;
+                    z-index: 10;
+                    overflow: hidden;
+                    text-align: center;
+                    border-radius: 7.5px;
                     
+                    .qb-event-link{
+                        text-decoration: none;
+                        font-size: 20px;
+                        font-weight: 550;
+                        color: #3d3d3d;
+                        display: inline-block;
+
+                        .qb-event-title-text{
+                            
+                        }
                     }
                 }
             }
@@ -72,20 +84,31 @@
                 width: 100%;
     
                 .qb-event-title-wrap{
+                    border: 2px solid #e5e5e5;
                     padding: 20px;
-                    text-align: center;
-                    margin: 30px 0px;   
-                    border-radius: 5px;
+                    border-radius: 15px;
                     
-                    .qb-event-link{
-                        text-decoration: none;
-                        font-size: 20px;
-                        font-weight: 550;
-                        color: #3d3d3d;
-    
-                        .qb-event-title{
+                    .qb-event-title{
+                        background-color: rgb(255, 253, 253);
+                        padding: 20px;
+                        opacity: 1;
+                        z-index: 5;
+                        overflow: hidden;
+                        text-align: center;
+                        border-radius: 7.5px;
+
                         
+                        .qb-event-link{
+                            text-decoration: none;
+                            font-size: 20px;
+                            font-weight: 550;
+                            color: #3d3d3d;
+        
+                            .qb-event-title-text{
+                            
+                            }
                         }
+                        
                     }
                 }
             }

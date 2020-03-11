@@ -16,7 +16,6 @@ class Event extends Component{
             res.data.data.map( eventData =>{
                 if(dataId==eventData.id)
                 {
-                    console.log(eventData)
                     this.setState({
                         data:eventData
                     });
@@ -28,16 +27,16 @@ class Event extends Component{
                                 <img className="qb-event-card-pic" src={eventData.cover_pic} alt="" />
                                 <div className="qb-event-card-details">
                                     <div className="qb-event-card-des">
-                                        <span><i class="far fa-clock"></i>   Time: </span>{eventData.time} 
+                                        <span><i className="far fa-clock"></i>   Time: </span>{eventData.time} 
                                     </div>
                                     <div className="qb-event-card-des">
-                                        <span><i class="far fa-calendar"></i>   Version: </span>{eventData.year}
+                                        <span><i className="far fa-calendar"></i>   Version: </span>{eventData.year}
                                     </div>
                                     <div className="qb-event-card-des">
-                                        <span><i class="far fa-calendar-alt"></i>   Date: </span>{eventData.date}
+                                        <span><i className="far fa-calendar-alt"></i>   Date: </span>{eventData.date}
                                     </div>
                                     <div className="qb-event-card-des">
-                                        <span><i class="fas fa-map-marker-alt"></i>   Venue: </span>NIT Raipur
+                                        <span><i className="fas fa-map-marker-alt"></i>   Venue: </span>NIT Raipur
                                     </div>
                                 </div>
                             </div>
@@ -46,28 +45,28 @@ class Event extends Component{
                             <div className="qb-psuedo"></div>  
                             <div className="qb-psuedo-details-card">
                                 <div className="qb-event-card-des">
-                                    <span><i class="far fa-clock"></i>   Time: </span>{eventData.time} 
+                                    <span><i className="far fa-clock"></i>   Time: </span>{eventData.time} 
                                 </div>
                                 <div className="qb-event-card-des">
-                                    <span><i class="far fa-calendar"></i>   Version: </span>{eventData.year}
+                                    <span><i className="far fa-calendar"></i>   Version: </span>{eventData.year}
                                 </div>
                                 <div className="qb-event-card-des">
-                                    <span><i class="far fa-calendar-alt"></i>   Date: </span>{eventData.date}
+                                    <span><i className="far fa-calendar-alt"></i>   Date: </span>{eventData.date}
                                 </div>
                                 <div className="qb-event-card-des">
-                                    <span><i class="fas fa-map-marker-alt"></i>   Venue: </span>NIT Raipur
+                                    <span><i className="fas fa-map-marker-alt"></i>   Venue: </span>NIT Raipur
                                 </div>
                             </div>     
                             {this.state.data.details}
                             <div className="qb-points">
                                 <div className="qb-point">
-                                    <span><i class="far fa-envelope"></i>   Email : </span>{eventData.email}
+                                    <span><i className="far fa-envelope"></i>   Email : </span>{eventData.email}
                                 </div>
                                 <div className="qb-point">
-                                    <span><i class="fas fa-user-friends"></i>   Number of People Registered :  </span>{eventData.no_of_ppl_registered}
+                                    <span><i className="fas fa-user-friends"></i>   Number of People Registered :  </span>{eventData.no_of_ppl_registered}
                                 </div>
                                 <div className="qb-point">
-                                    <span><i class="far fa-paper-plane"></i>   URL : </span><a href={eventData.website_url} >{eventData.website_url}</a>
+                                    <span><i className="far fa-paper-plane"></i>   URL : </span><a href={eventData.website_url} >{eventData.website_url}</a>
                                 </div>
                             </div>
                         </div>  

@@ -3,10 +3,6 @@ import './Navbar.css'
 import { NavLink } from 'react-router-dom';
 
 class Navbar extends Component{
-    constructor(){
-        super()
-        console.log("q");
-    }
     qbNavbarClickFun=(event) =>{
         var qbNavbarLinks;
         if(event.target.nodeName==="I")
