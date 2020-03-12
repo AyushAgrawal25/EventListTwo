@@ -5,7 +5,7 @@ import EventList from './EventList/EventList';
 import Event from './Event/Event'
 import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
-import ESummit from './E-Summit.png';
+import ECellCadets from './ECellCadets/ECellCadets';
 
 class App extends Component{
   render(){
@@ -17,6 +17,8 @@ class App extends Component{
             
             <Route exact path='/' component={EventList} />
             <Route path='/Event/:post_id' component={Event} />
+            <Route path='/ECellCadets' component={ECellCadets} />
+            
           </div>
           <Route path='/' component={Footer}  />
         </div>

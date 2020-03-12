@@ -42,6 +42,9 @@ class Navbar extends Component{
                         <NavLink to="#" className="qb-navbar-nav">
                             Event Explorer
                         </NavLink>
+                        <NavLink to="../ECellCadets/ECellCadets.js" className="qb-navbar-nav">
+                            E-Cell Cadets
+                        </NavLink>
                         <NavLink to="#" className="qb-navbar-nav">
                             Contact
                         </NavLink>
