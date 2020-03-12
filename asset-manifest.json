@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/EventListTwo/static/css/main.04eeef33.chunk.css",
+    "main.js": "/EventListTwo/static/js/main.2db2becf.chunk.js",
+    "main.js.map": "/EventListTwo/static/js/main.2db2becf.chunk.js.map",
+    "runtime-main.js": "/EventListTwo/static/js/runtime-main.d07d7b2a.js",
+    "runtime-main.js.map": "/EventListTwo/static/js/runtime-main.d07d7b2a.js.map",
+    "static/js/2.2af7f28d.chunk.js": "/EventListTwo/static/js/2.2af7f28d.chunk.js",
+    "static/js/2.2af7f28d.chunk.js.map": "/EventListTwo/static/js/2.2af7f28d.chunk.js.map",
+    "index.html": "/EventListTwo/index.html",
+    "precache-manifest.4d2515c3bebe475643f73fe45178d9c0.js": "/EventListTwo/precache-manifest.4d2515c3bebe475643f73fe45178d9c0.js",
+    "service-worker.js": "/EventListTwo/service-worker.js",
+    "static/css/main.04eeef33.chunk.css.map": "/EventListTwo/static/css/main.04eeef33.chunk.css.map",
+    "static/js/2.2af7f28d.chunk.js.LICENSE.txt": "/EventListTwo/static/js/2.2af7f28d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d07d7b2a.js",
+    "static/js/2.2af7f28d.chunk.js",
+    "static/css/main.04eeef33.chunk.css",
+    "static/js/main.2db2becf.chunk.js"
+  ]
+}
