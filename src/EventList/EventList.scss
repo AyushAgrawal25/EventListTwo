@@ -3,6 +3,8 @@
 }
 .qb-event-list-wrap{
     background-color: #fff;
+    margin-left: 10%;
+    margin-right: 10%;
     .qb-event-wrap{
         //background-color: #903C81;
     }
@@ -72,6 +74,8 @@
 @media (max-width: 850px){
     .qb-event-list-wrap{
         background-color: #fff;
+        margin-right: 0%;
+        margin-left: 0%;
         
         .qb-event-wrap{
             background-color: #903C81;

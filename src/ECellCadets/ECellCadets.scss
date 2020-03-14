@@ -1,3 +1,167 @@
+.qbCardShadow {
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.28);
+
+}
 .ecell-cadets-wrap{
     padding-top: 100px;
+    padding-left: 4%;
+    padding-right: 4%;
+
+    .qb-ecell-cadet-wrap{
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 2.6665%;
+        display: inline-block;
+        width: 28%;
+        box-sizing: border-box;
+        text-align: center;
+
+        .qb-ecell-cadet-card-wrap{
+            display: inline-block;
+            width: auto;
+
+            .qb-ecell-cadet-card{
+                .qb-ecell-cadet-card-title{
+                    font-size: 30px;
+                    padding-bottom: 20px;
+                }
+
+                .qb-ecell-cadet-pic{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .qb-ecell-cadet-des{
+            padding-top: 20px;
+            font-size: 20px;
+            display: inline-block;
+
+            .qb-ecell-cadet-des-head{
+                padding-bottom: 10px;
+
+                span{
+                    font-weight: 550;
+                }
+            }
+        }
+    }
+    .qb-ecell-cadet-optns{
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+
+        .qb-ecell-cadet-btn{
+            padding: 20px 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            background-color: #08b76d;
+            color: #fff;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+@media (max-width:1200px){
+    .ecell-cadets-wrap{
+        padding-top: 100px;
+        padding-left: 4%;
+        padding-right: 4%;
+
+        .qb-ecell-cadet-wrap{
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 5%;
+            display: inline-block;
+            width: 40%;
+            box-sizing: border-box;
+            text-align: center;
+
+            .qb-ecell-cadet-card-wrap{
+                display: inline-block;
+                width: auto;
+    
+                .qb-ecell-cadet-card{
+                    .qb-ecell-cadet-pic{
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 10px;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+        }
+    }   
+}
+
+@media (max-width:786px){
+    .ecell-cadets-wrap{
+        padding-top: 100px;
+        padding-left: 5%;
+        padding-right: 5%;
+    
+        .qb-ecell-cadet-wrap{
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 10%;
+            display: inline-block;
+            width: 80%;
+            text-align: center;
+            box-sizing: border-box;
+
+            .qb-ecell-cadet-card-wrap{
+                display: inline-block;
+                width: auto;
+    
+                .qb-ecell-cadet-card{
+                    .qb-ecell-cadet-pic{
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+        }
+    }   
+}
+
+@media (max-width:500px){
+    .ecell-cadets-wrap{
+        padding-top: 15px;
+        padding-left: 0%;
+        padding-right: 0%;
+    
+        .qb-ecell-cadet-wrap{
+            background-color: #fff;
+            border-radius: 0px;
+            padding: 30px;
+            margin: 10% 0%;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+
+            .qb-ecell-cadet-card-wrap{
+                display: inline-block;
+                width: auto;
+    
+                .qb-ecell-cadet-card{
+                    .qb-ecell-cadet-pic{
+                        width: 250px;
+                        height: 250px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+        }
+    }   
 }
