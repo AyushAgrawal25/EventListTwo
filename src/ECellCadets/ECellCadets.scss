@@ -165,3 +165,207 @@
         }
     }   
 }
+
+.ecell-cadet-btn{
+    background-color: #08b76d;
+    width: auto;
+    display: inline-block;
+    position: fixed;
+    bottom: 10%;
+    padding: 20px;
+    border-radius: 50%;
+    left: 5%;
+    font-size: 30px;
+    color: white;
+}
+
+@media (max-width:600px){
+    .ecell-cadet-btn{
+        background-color: #08b76d;
+        width: auto;
+        display: inline-block;
+        position: fixed;
+        bottom: 10%;
+        padding: 20px;
+        border-radius: 50%;
+        left: 5%;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+.qb-modal-open{
+    display: block;
+}
+.qb-modal-close{
+    display: none !important;
+}
+.ecell-cadet-form-modal{
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0px;
+    display: table;
+
+    .ecell-cadet-form-modal-content{
+        display: table-cell;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+        text-align: center;
+
+        .ecell-cadet-form-wrap{
+            display: inline-block;
+            color: #252525;
+            width: auto;
+            box-sizing: border-box;
+            padding-top: 35px;
+            padding-right: 50px;
+            padding-bottom: 7px;
+            padding-left: 50px;
+            background-color: #fbfafa;
+            border-radius: 15px;
+
+            .ecell-cadet-form-close-btn-wrap{
+                display: block;
+                position: relative;
+                top: -20px;
+                text-align: right;
+
+                .ecell-cadet-form-close-btn{
+                    display: inline-block;
+                    font-size: 25px;
+                    position: relative;
+                    right: -20px;
+                }
+            }
+    
+            .ecell-cadet-form{
+                width: 550px;
+                position: relative;
+                top: -30px;
+
+                .ecell-cadet-form-title{
+                    font-size: 35px;
+                    font-weight: 550;
+                    padding-bottom: 20px;
+                    position: relative;
+                    top: -7px;
+                }
+
+                .ecell-cadet-form-submit-btn-wrap{
+                    text-align: right;
+                    
+                    .ecell-cadet-form-submit-btn{
+                        display: inline-block;
+                        width: auto;
+                        padding: 10px 20px;
+                        margin-top: 20px;
+                        background-color: #08b76d;
+                        color: #fff;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        } 
+    }
+
+}
+
+.qb-label{
+    display: inline-block;
+
+    label{
+        width: 104.33px;
+        text-align: right;
+    }
+}
+
+@media (max-width:670px){
+    .qb-label{
+        display: block;
+
+        label{
+            width: 100%;
+            text-align: left;
+        }
+    }
+    .ecell-cadet-form-modal{
+        width: 100%;
+        height: 100%;
+        z-index: 200;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        top: 0px;
+    
+        .ecell-cadet-form-modal-content{
+            display: block;
+            box-sizing: content-box;
+            width: 100%;
+            position: fixed;
+            height: auto;
+            vertical-align: unset;
+            text-align: unset;
+    
+            .ecell-cadet-form-wrap{
+                display: inline-block;
+                color: #252525;
+                width: 100%;
+                box-sizing: border-box;
+                padding-top: 35px;
+                padding-right: 50px;
+                padding-bottom: 7px;
+                padding-left: 50px;
+                background-color: #fbfafa;
+                border-radius: 0px;
+    
+                .ecell-cadet-form-close-btn-wrap{
+                    display: block;
+                    position: relative;
+                    top: -20px;
+                    text-align: right;
+    
+                    .ecell-cadet-form-close-btn{
+                        display: inline-block;
+                        font-size: 25px;
+                        position: relative;
+                        right: -20px;
+                    }
+                }
+        
+                .ecell-cadet-form{
+                    width: 100%;
+                    position: relative;
+                    top: -30px;
+    
+                    .ecell-cadet-form-title{
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: 550;
+                        padding-bottom: 20px;
+                        position: relative;
+                        top: -7px;
+                    }
+    
+                    .ecell-cadet-form-submit-btn-wrap{
+                        text-align: right;
+                        
+                        .ecell-cadet-form-submit-btn{
+                            display: inline-block;
+                            width: auto;
+                            padding: 10px 20px;
+                            margin-top: 20px;
+                            background-color: #08b76d;
+                            color: #fff;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            } 
+        }
+    
+    }
+}
