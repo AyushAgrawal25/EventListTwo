@@ -36,6 +36,21 @@ class ECellCadets extends Component{
         this.qbElementRef.current.querySelector("#details_html").value=null;
         this.qbElementRef.current.querySelector("#time").value=null;
         this.qbElementRef.current.querySelector("#email").value=null;
+    
+        let qbEcellCadetInputData={
+            name:null,
+            venue:null,
+            date:null,
+            time:null,
+            details:null,
+            details_html:null,
+            email:null,
+            flag:true,
+            year:"2020",
+            ecell_user:2
+        }
+
+        this.setState({qbEcellCadetInputData:qbEcellCadetInputData});
     }
 
     qbDataLoadFun=()=>{
