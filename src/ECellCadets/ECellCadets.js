@@ -135,7 +135,7 @@ class ECellCadets extends Component{
     qbCadetAddFun=(event)=>{
         let qbModalEle=this.qbElementRef.current.querySelector(".ecell-cadet-form-modal");
         qbModalEle.classList.add("qb-modal-open");
-        qbModalEle.classList.remove("qb-modal-close")
+        qbModalEle.classList.remove("qb-modal-close");
     }
     qbModalCloseFun=()=>{
         this.qbCadetUpdateId=null;
@@ -185,12 +185,6 @@ class ECellCadets extends Component{
     render(){
         return(
             <div className="ecell-cadets-container" ref={this.qbElementRef}>
-                <div className="ecell-cadets-wrap">
-                    {this.state.qbCadetList}
-                </div>
-                <div className="ecell-cadet-btn qbCardShadow" onClick={this.qbCadetAddFun}>
-                    <i className="fas fa-user-plus"></i>
-                </div>
                 <div className="ecell-cadet-form-modal qb-modal-close">
                     <div className="ecell-cadet-form-modal-content">
                         <div className="ecell-cadet-form-wrap">
@@ -359,6 +353,13 @@ class ECellCadets extends Component{
                             </div>
                         </div>
                     </div>
+                </div>
+            
+                <div className="ecell-cadets-wrap">
+                    {this.state.qbCadetList}
+                </div>
+                <div className="ecell-cadet-btn qbCardShadow" onClick={this.qbCadetAddFun}>
+                    <i className="fas fa-user-plus"></i>
                 </div>
             </div>
         );
