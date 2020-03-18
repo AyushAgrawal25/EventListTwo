@@ -4,8 +4,8 @@
 }
 
 .App {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3499D8), to(#3C4083));
-  background-image: linear-gradient(to bottom, #3499D8, #3C4083);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2A7CB0), to(#3C4083));
+  background-image: linear-gradient(to bottom, #2A7CB0, #3C4083);
 }
 
 .App .qb-container {
@@ -15,8 +15,8 @@
 
 @media (max-width: 600px) {
   .App {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#3499D8), to(#3C4083));
-    background-image: linear-gradient(to bottom, #3499D8, #3C4083);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2A7CB0), to(#3C4083));
+    background-image: linear-gradient(to bottom, #2A7CB0, #3C4083);
   }
   .App .qb-container {
     padding: 0% 0%;

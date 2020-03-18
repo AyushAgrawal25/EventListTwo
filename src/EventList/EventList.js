@@ -5,7 +5,7 @@ import Axios from "axios";
 
 class EventList extends Component{
     state={
-        data:null,
+        qbEventDatas:null,
         qbEventTitleList:null,
         qbEventTitleWraps:null,
         qbEventTitles:null,
@@ -16,20 +16,8 @@ class EventList extends Component{
         this.myRef=React.createRef();
         Axios.get('https://ecell.nitrr.ac.in/events/list/2019/?format=json').then( res =>{
             let qbEventTitleList=[];
-            res.data.data.map( eventData =>{
-                let qbEventLink="./Event/"+eventData.id;
-                let qbEventTitle=(
-                    <div className="qb-event-title-wrap" id={eventData.id} key={eventData.id}>
-                        <div className="qb-event-title qbCardShadow" id={eventData.id} key={eventData.id}>
-                            <Link to={qbEventLink} className="qb-event-link" id={eventData.id} draggable="false" >
-                                <div className="qb-event-title-text" id={eventData.id} >
-                                    {eventData.name}
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                );
-                qbEventTitleList.push(qbEventTitle);
+            this.setState({
+                qbEventDatas:res.data.data
             });
             this.setState({
                 qbEventTitleList:qbEventTitleList
@@ -249,7 +237,29 @@ class EventList extends Component{
         });
 
     }
+
+    qbEventTitlesHTML;
     render(){
+        this.qbEventTitlesHTML=[];
+        if(this.state.qbEventDatas)
+        {
+            this.state.qbEventDatas.map(qbEventData =>{
+                let qbEventLink="./Event/"+qbEventData.id;
+                let qbEventTitle=(
+                    <div className="qb-event-title-wrap" id={qbEventData.id} key={qbEventData.id}>
+                        <div className="qb-event-title qbCardShadow" id={qbEventData.id} key={qbEventData.id}>
+                            <Link to={qbEventLink} className="qb-event-link" id={qbEventData.id} draggable="false" >
+                                <div className="qb-event-title-text" id={qbEventData.id} >
+                                    {qbEventData.name}
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                );
+                this.qbEventTitlesHTML.push(qbEventTitle);
+            });
+        }
+
         return(
             <div className="qb-event-list-wrap" ref={this.myRef}  >
                 <div className="qb-event-list">
@@ -257,7 +267,7 @@ class EventList extends Component{
                         List of All Events of E-Cell
                     </div>
                     <div className="qb-event-list-events">
-                        {this.state.qbEventTitleList}
+                        {this.qbEventTitlesHTML}
                     </div>
                 </div>
             </div>

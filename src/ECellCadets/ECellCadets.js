@@ -60,41 +60,9 @@ class ECellCadets extends Component{
         let qbCadetList=[];
         this.qbElementRef=React.createRef();
         let qbEcellCadetDatas;
-        let qbEcellCadetNum=0;
 
         Axios.get('https://ecell.nitrr.ac.in/events/cadets/').then( res =>{
             qbEcellCadetDatas=res.data;
-            res.data.map(cadetData => {
-                let qbCadetEle=(<div className="qbCardShadow qb-ecell-cadet-wrap" key={qbEcellCadetNum}>
-                    <div className="qb-ecell-cadet-card-wrap">
-                        <div className="qb-ecell-cadet-card">
-                            <div className="qb-ecell-cadet-card-title">
-                                {cadetData.name}
-                            </div>
-                            <img className="qb-ecell-cadet-pic" src={cadetData.cover_pic} alt="" />                     
-                        </div>
-                        <div className="qb-ecell-cadet-des">
-                            <div className="qb-ecell-cadet-des-head">
-                                <span >Email : </span> {cadetData.email}
-                            </div>
-                            <div className="qb-ecell-cadet-des-head">
-                                <span >Year : </span> {cadetData.year}
-                            </div>
-                            <div className="qb-ecell-cadet-des-head">
-                                <span >Venue : </span> {cadetData.venue}
-                            </div>
-                        </div>
-                    </div>
-                    <div className="qb-ecell-cadet-optns">
-                        <div className="qbCardShadow qb-ecell-cadet-btn " qb_key={qbEcellCadetNum} onClick={this.qbCadetUpdateFun}>Update</div>
-                        <div className="qbCardShadow qb-ecell-cadet-btn " qb_key={qbEcellCadetNum} onClick={this.qbCadetDeleteFun}>Delete</div>
-                    </div>
-                </div>
-                );
-                
-                qbEcellCadetNum++;
-                qbCadetList.push(qbCadetEle);
-            });
             this.setState({
                 qbCadetList:qbCadetList
             });
@@ -197,14 +165,51 @@ class ECellCadets extends Component{
         })
     }
 
+    qbEcellCadetListHTML;
     render(){
+        this.qbEcellCadetListHTML=[];
+        let qbEcellCadetNum=0;
+        if(this.state.qbEcellCadetDatas)
+        {
+            this.state.qbEcellCadetDatas.map(qbEcellCadetData =>{
+                let qbCadetEle=(<div className="qbCardShadow qb-ecell-cadet-wrap" key={qbEcellCadetNum}>
+                    <div className="qb-ecell-cadet-card-wrap">
+                        <div className="qb-ecell-cadet-card">
+                            <div className="qb-ecell-cadet-card-title">
+                                {qbEcellCadetData.name}
+                            </div>
+                            <img className="qb-ecell-cadet-pic" src={qbEcellCadetData.cover_pic} alt="" />                     
+                        </div>
+                        <div className="qb-ecell-cadet-des">
+                            <div className="qb-ecell-cadet-des-head">
+                                <span >Email : </span> {qbEcellCadetData.email}
+                            </div>
+                            <div className="qb-ecell-cadet-des-head">
+                                <span >Year : </span> {qbEcellCadetData.year}
+                            </div>
+                            <div className="qb-ecell-cadet-des-head">
+                                <span >Venue : </span> {qbEcellCadetData.venue}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="qb-ecell-cadet-optns">
+                        <div className="qbCardShadow qb-ecell-cadet-btn qb-btn " qb_key={qbEcellCadetNum} onClick={this.qbCadetUpdateFun}>Update</div>
+                        <div className="qbCardShadow qb-ecell-cadet-btn qb-btn " qb_key={qbEcellCadetNum} onClick={this.qbCadetDeleteFun}>Delete</div>
+                    </div>
+                </div>
+                );
+                
+                qbEcellCadetNum++;
+                this.qbEcellCadetListHTML.push(qbCadetEle);
+            });
+        }
         return(
             <div className="ecell-cadets-container" ref={this.qbElementRef}>
                 <div className="ecell-cadet-form-modal qb-modal-close">
                     <div className="ecell-cadet-form-modal-content">
                         <div className="ecell-cadet-form-wrap">
                             <div className="ecell-cadet-form-close-btn-wrap" onClick={this.qbModalCloseFun}>
-                                <div className="ecell-cadet-form-close-btn">
+                                <div className="ecell-cadet-form-close-btn qb-btn">
                                     <i class="fas fa-times"></i>
                                 </div>
                             </div>
@@ -363,7 +368,7 @@ class ECellCadets extends Component{
                                 </div>
 
                                 <div className="ecell-cadet-form-submit-btn-wrap">
-                                    <div className="ecell-cadet-form-submit-btn" onClick={this.qbSubmitFormFun} >Submit</div>
+                                    <div className="ecell-cadet-form-submit-btn qb-btn" onClick={this.qbSubmitFormFun} >Submit</div>
                                 </div>
                             </div>
                         </div>
@@ -371,9 +376,9 @@ class ECellCadets extends Component{
                 </div>
             
                 <div className="ecell-cadets-wrap">
-                    {this.state.qbCadetList}
+                    {this.qbEcellCadetListHTML}
                 </div>
-                <div className="ecell-cadet-btn qbCardShadow" onClick={this.qbCadetAddFun}>
+                <div className="ecell-cadet-btn qb-btn qbCardShadow" onClick={this.qbCadetAddFun}>
                     <i className="fas fa-user-plus"></i>
                 </div>
             </div>

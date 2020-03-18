@@ -3,6 +3,14 @@
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.28);
 }
 
+.qb-btn {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .ecell-cadets-wrap {
   padding-top: 100px;
   padding-left: 4%;
